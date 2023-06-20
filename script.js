@@ -83,3 +83,15 @@ classes.classList.remove('fundoVerde')
 function alternar(){
     classes.classList.toggle('fundoVerde') // Adiciona e remove a classe, verificando o estado.
 }
+function criarBotao(){
+    const btn = document.createElement('button')
+    btn.textContent = 'Salvar'
+    btn.type = 'button'
+    btn.style.marginLeft = '10px'
+    btn.addEventListener('click', ola)
+    const body = document.querySelector('body')
+    body.appendChild(btn)
+}
+function ola(){
+    alert('Olá. Criei um evento')
+}
