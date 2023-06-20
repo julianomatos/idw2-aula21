@@ -75,3 +75,11 @@ function remover(){
     document.getElementById('clubRemove').value = ''
     document.getElementById('clubRemove').focus()
 }
+//Adicionando e removendo classes
+paragrafos[2].classList.add('fundoVerde')
+const classes = document.querySelector('h2')
+classes.classList.add('fundoVerde')
+classes.classList.remove('fundoVerde')
+function alternar(){
+    classes.classList.toggle('fundoVerde') // Adiciona e remove a classe, verificando o estado.
+}
